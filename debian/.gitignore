@@ -1,0 +1,7 @@
+/.debhelper
+/debhelper-build-stamp
+/files
+/8821cu-dkms
+/*.debhelper.log
+/*.debhelper
+/*.substvars

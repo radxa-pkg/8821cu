@@ -2,11 +2,14 @@ Index: 8821cu/src/dkms.conf
 ===================================================================
 --- 8821cu.orig/src/dkms.conf
 +++ 8821cu/src/dkms.conf
-@@ -1,5 +1,5 @@
+@@ -1,7 +1,5 @@
 -PACKAGE_NAME="rtl8821cu"
 -PACKAGE_VERSION="5.12.0.4"
+-BUILT_MODULE_NAME[0]="8821cu"
+-MAKE="./dkms-make.sh"
+-CLEAN="'make' clean"
 +PACKAGE_NAME="8821cu"
 +PACKAGE_VERSION="#MODULE_VERSION#"
- BUILT_MODULE_NAME[0]="8821cu"
- MAKE="./dkms-make.sh"
- CLEAN="'make' clean"
++BUILT_MODULE_NAME[0]="$PACKAGE_NAME"
+ DEST_MODULE_LOCATION[0]="/updates/dkms"
+ AUTOINSTALL="yes"
